@@ -1,0 +1,6 @@
+[submodule "oxygen-fresh"]
+    path = oxygen-fresh
+    url = git@github.com:dmitry-osin/oxygen-fresh.git
+[submodule "intercode"]
+    path = intercode
+    url = git@github.com:dmitry-osin/intercode.git

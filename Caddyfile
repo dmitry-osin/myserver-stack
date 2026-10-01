@@ -1,0 +1,16 @@
+{
+    email {$ACME_EMAIL}
+    acme_ca https://acme-v02.api.letsencrypt.org/directory
+}
+ahtx.ru {
+    reverse_proxy blog:8000
+}
+intqst.ru {
+    @backend path /api/* /ws/*
+    handle @backend {
+        reverse_proxy server:8090
+    }
+    handle {
+        reverse_proxy web:80
+    }
+}
